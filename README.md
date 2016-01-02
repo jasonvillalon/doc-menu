@@ -3,6 +3,29 @@
 ## Installation
 ``` shell
 $ yo rinjs:install-component
+
+     _-----_
+    |       |
+    |--(o)--|   .--------------------------.
+   `---------´  |    Welcome to Yeoman,    |
+    ( _´U`_ )   |   ladies and gentlemen!  |
+    /___A___\   '__________________________'
+     |  ~  |
+   __'.___.'__
+ ´   `  |° ´ Y `
+
+You"re using the Atomic generator.
+? git repository or relative path to /src/ git@github.com:jasonvillalon/doc-menugit@github.com:jasonvillalon/doc-menu.git
+Cloning into 'doc-menu'...
+   create ../variables.styl
+   create ../variables.js
+   create ../components.styl
+   create ../../atomic.json
+ conflict settings.js
+? Overwrite settings.js? overwrite this and all others
+    force settings.js
+    force dependencies.js
+DONE
 ```
 ## Usage
 
