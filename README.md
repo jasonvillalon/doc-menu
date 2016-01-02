@@ -15,7 +15,7 @@ $ yo rinjs:install-component
  ´   `  |° ´ Y `
 
 You"re using the Atomic generator.
-? git repository or relative path to /src/ git@github.com:jasonvillalon/doc-menugit@github.com:jasonvillalon/doc-menu.git
+? git repository or relative path to /src/ git@github.com:jasonvillalon/doc-menu.git
 Cloning into 'doc-menu'...
    create ../variables.styl
    create ../variables.js
@@ -30,6 +30,15 @@ DONE
 ## Usage
 
 ``` javascript
+import React, { PropTypes } from "react"
+
+import dependencies from "./dependencies"
+
+let {
+  AtomicApp,
+  DocMenu
+} = dependencies
+
 React.createClass({
   render() {
     try {
