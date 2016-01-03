@@ -4,15 +4,30 @@ import {Link} from "react-router"
 import dependencies from "./dependencies"
 
 const Item = React.createClass({
+  getInitialState() {
+    return {
+      isOver: false
+    }
+  },
   onClick(e) {
     if (this.props.onItemClick) {
       this.props.onItemClick(this.props)
     }
   },
+  onMouseOver(e) {
+    this.setState({
+      isOver: true
+    })
+  },
+  onMouseOut(e) {
+    this.setState({
+      isOver: false
+    })
+  },
   render() {
     return (
-      <li>
-        <Link activeClassName="menu-active" to={this.props.to} onClick={this.onClick}>{this.props.title}</Link>
+      <li onMouseOver={this.onMouseOver} onMouseOut={this.onMouseOut}>
+        <Link activeClassName="menu-active" className={this.state.isOver ? "menu-active" : ""} to={this.props.to} onClick={this.onClick}>{this.props.title}</Link>
         <div className="menu-content">
           {this.props.children}
         </div>
