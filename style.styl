@@ -7,19 +7,26 @@
       margin-left 5px
     li
       background $stable
+      // height 30px
+      // line-height 30px
       a
         // &:hover
         &.menu-active
           font-weight bold
           +.menu-content
-            max-height 500px
+            // margin-top -15px
+            // max-height 500px
             transform translate3d(0, 0, 0)
             display block
+            // .menu
+            //   li
+            //     height auto
         padding 15px
         display block
         color $positive
         text-decoration none
       .menu-content
-        max-height 0
-        transition-duration .50s
+        // max-height 0
+        display none
+        transition-duration .10s
         transform translate3d(-100%, 0, 0)
